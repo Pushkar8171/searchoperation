@@ -1,9 +1,6 @@
 class ProductsController < ApplicationController
-  def search 
-
-  end 
 
   def index 
-    @products = Product.all
-  end 
+    @products = Product.paginate(page: params[:page], per_page: 5)
+	end 
 end
