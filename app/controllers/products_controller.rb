@@ -1,14 +1,10 @@
 class ProductsController < ApplicationController
 
   def index 
-    @products = Product.paginate(page: params[:page], per_page: 5)
+    @q = Product.ransack(params[:q])
+    @product = @q.result(distict: true).page(params[:page])
     
-
 	end 
 
-  def search 
-    @q = Product.ransack(params[:q])
-    @product = @q.result(distinct: true)
-
-  end 
+  
 end

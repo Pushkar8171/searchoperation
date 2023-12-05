@@ -1,5 +1,11 @@
 <h1>Products</h1>
 
+<%= search_form_for @q do |f| %>
+  <%= f.label :name_cont %>
+  <%= f.search_field :name_cont %>
+
+  <%= f.submit %>
+  <% end %>
 
 <table border= "1">
   <thead>
@@ -13,19 +19,19 @@
     </tr>
   </thead>
   <tbody>
-    <% @products.each do |product| %>
+    <% @product.each do |prod| %>
       <tr>
-        <td><%= product.id %></td>
-        <td><%= product.name %></td>
-        <td><%= product.category %></td>
-        <td><%= product.price %></td>
-        <td><%= product.brand %></td>
-        <td><%= product.sellor %></td>
+        <td><%= prod.id %></td>
+        <td><%= prod.name %></td>
+        <td><%= prod.category %></td>
+        <td><%= prod.price %></td>
+        <td><%= prod.brand %></td>
+        <td><%= prod.sellor %></td>
       </tr>
     <% end %>
     
   </tbody>
 </table>
 <div class="py-4">
-  <%= will_paginate @products %>
+  <%= will_paginate @product %>
 </div>
