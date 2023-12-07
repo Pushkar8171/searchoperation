@@ -1,0 +1,37 @@
+<h1>Products Table </h1>
+
+<%= search_form_for @q do |f| %>
+  <%= f.label :name_cont %>
+  <%= f.search_field :name_cont %>
+
+  <%= f.submit %>
+  <% end %>
+
+<table border = "1">
+<thead>
+<tr>
+  <th>ID </th>
+  <th>Name</th>
+  <th>Author</th>
+  <th>Publisher</th>
+  <th>Genre</th>
+  
+</tr>
+</thead>
+ <tbody>
+  
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.id %></td>
+      <td><%= book.name %></td>
+      <td><%= book.author%></td>
+      <td><%= book.publisher %></td>
+      <td><%= book.genre %></td>
+    </tr>
+  <% end %>
+  
+</tbody>
+</table>
+<div class="py-4">
+  <%= will_paginate @product %>
+</div>
