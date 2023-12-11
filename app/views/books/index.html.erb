@@ -1,11 +1,21 @@
 <h1>Products Table </h1>
 
 <%= search_form_for @q do |f| %>
+
+  <%= f.label :genre_cont %>
+  <%= f.collection_select( :genre_eq, Book.distinct.pluck(:genre), :to_s, :humanize, { prompt: "FilterOutBooks Using  Genre" }) %>
+
+
   <%= f.label :name_cont %>
   <%= f.search_field :name_cont %>
 
+  
+  
   <%= f.submit %>
   <% end %>
+
+  
+  
 
 <table border = "1">
 <thead>
