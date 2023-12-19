@@ -1,19 +1,92 @@
-require "faker"
+#require "faker"
 
-100.times do 
-  books = Book.new(
-    name:Faker::Book.title,
-    author:Faker::Book.author,
-    publisher:Faker::Book.publisher,
-    genre:Faker::Book.genre
-   )
+# 100.times do 
+#   books = Book.new(
+#     name:Faker::Book.title,
+#     author:Faker::Book.author,
+#     publisher:Faker::Book.publisher,
+#     genre:Faker::Book.genre
+#    )
 
-   books.save
-
-
-
+#    books.save
+ 
 
 
 
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
 
-end 
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+Product.create(name: 'Laptop', category: 'Electronics', price: 999.99, brand: 'ABC Electronics', sellor: 'Electro Deals Inc.')
+Product.create(name: 'Smartphone', category: 'Electronics', price: 399.99, brand: 'XYZ Tech', sellor: 'Mobile Haven')
+Product.create(name: 'Running Shoes', category: 'Footwear', price: 79.99, brand: 'FitFeet', sellor: 'Shoe Paradise')
+Product.create(name: 'Coffee Maker', category: 'Appliances', price: 49.99, brand: 'BrewMaster', sellor: 'Home Essentials Outlet')
+Product.create(name: 'Bookshelf', category: 'Furniture', price: 149.99, brand: 'WoodCraft', sellor: 'FurniMart')
+ puts "Seeding Done Successfully !!"
