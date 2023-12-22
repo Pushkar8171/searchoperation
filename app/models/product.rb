@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+  belongs_to :cart
 
   ransack
   def self.ransackable_attributes(auth_object = nil)
