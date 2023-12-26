@@ -1,1 +1,31 @@
-<h1> Your Cart is ready :)</h1>
+<h1> Cart Is Ready !! </h1>
+
+<table border = "1">
+<thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Brand</th>
+    <th>Seller</th>
+    <th>Image</th>
+    <th>Action</th>
+  </tr>
+</thead>
+<tbody>
+  <% @product.each do |prod| %>
+    <tr>
+      <td><%= prod.id %></td>
+      <td><%= prod.name %></td>
+      <td><%= prod.category %></td>
+      <td><%= prod.price %></td>
+      <td><%= prod.brand %></td>
+      <td><%= prod.sellor %></td>
+      <td><%= image_tag(prod.image) if prod.image.attached? %></td>
+      <td> <button type="button"> Remove </button> </td>
+
+    </tr>
+  <% end %>
+</tbody>
+</table>
