@@ -1,37 +1,92 @@
-<h1>Products</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .button1 {background-color: #04AA6D;}
+    h1 {
+      color: navy;
+    }
 
-<%= search_form_for @q do |f| %>
-  <%= f.label :name_cont %>
-  <%= f.search_field :name_cont %>
+    table {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
 
-  <%= f.submit %>
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>!! FAMAZON  !!</title>
+</head>
+<body>
+
+  <h1>!! FAMAZON !!</h1>
+
+  <%= search_form_for @q do |f| %>
+    <%= f.label :name_cont %>
+    <%= f.search_field :name_cont %>
+
+    <%= f.submit %>
   <% end %>
 
-<table border= "1">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Category</th>
-      <th>Price</th>
-      <th>Brand</th>
-      <th>Sellor</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @products.each do |prod| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= prod.id %></td>
-        <td><%= prod.name %></td>
-        <td><%= prod.category %></td>
-        <td><%= prod.price %></td>
-        <td><%= prod.brand %></td>
-        <td><%= prod.sellor %></td>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Brand</th>
+        <th>Seller</th>
+        <th>Image</th>
+        <th>Action</th>
       </tr>
-    <% end %>
-    
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @products.each do |prod| %>
+        <tr>
+          <td><%= prod.id %></td>
+          <td><%= prod.name %></td>
+          <td><%= prod.category %></td>
+          <td><%= prod.price %></td>
+          <td><%= prod.brand %></td>
+          <td><%= prod.sellor %></td>
+          <td><%= image_tag(prod.image) if prod.image.attached? %></td>
+          <td> <button type="button">Add To Cart </button> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</body>
+</html>
+
 <div class="py-4">
   <%= will_paginate @product %>
 </div>
